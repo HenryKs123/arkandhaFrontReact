@@ -1,10 +1,10 @@
-Frontend React para API de Propiedades y Propietarios
+# Frontend React para API de Propiedades y Propietarios
 Este proyecto es un frontend construido con React que se comunica con las APIs de Propiedades y Propietarios en tu backend Django. El frontend utiliza la librería Axios para realizar las peticiones HTTP a los endpoints mencionados en el README del backend.
 
-Primeros pasos
+## Primeros pasos
 Sigue estos pasos para configurar y ejecutar el frontend en tu máquina local:
 
-Clona este repositorio en tu máquina:
+## Clona este repositorio en tu máquina:
 
 bash
 Copy code
@@ -19,14 +19,14 @@ Configura los archivos de comunicación:
 
 En la carpeta src/api, encontrarás dos archivos: apiPropiedad.js y apiPropietario.js. Cada archivo contiene funciones que utilizan Axios para realizar las peticiones a las APIs respectivas.
 
-Ejecuta la aplicación:
+## Ejecuta la aplicación:
 
 bash
 Copy code
 npm start
 Accede a la aplicación en tu navegador: http://localhost:3000
 
-Componentes
+## Componentes
 El frontend consta de 8 componentes independientes que se reutilizan en todo el proyecto. Estos componentes se encuentran en la carpeta src/components.
 
 Componente1.js: Descripción del primer componente.
@@ -34,7 +34,7 @@ Componente2.js: Descripción del segundo componente.
 ...
 Componente8.js: Descripción del octavo componente.
 Uso de los archivos de comunicación
-Los archivos apiPropiedad.js y apiPropietario.js en la carpeta src/api contienen funciones que interactúan con las APIs de Propiedades y Propietarios respectivamente.
+Los archivos Propiedad.api.js y Propietario.api.js en la carpeta src/api contienen funciones que interactúan con las APIs de Propiedades y Propietarios respectivamente.
 
 Ejemplo de uso:
 javascript
