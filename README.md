@@ -1,4 +1,4 @@
-#Frontend React para API de Propiedades y Propietarios
+Frontend React para API de Propiedades y Propietarios
 Este proyecto es un frontend construido con React que se comunica con las APIs de Propiedades y Propietarios en tu backend Django. El frontend utiliza la librería Axios para realizar las peticiones HTTP a los endpoints mencionados en el README del backend.
 
 Primeros pasos
@@ -59,4 +59,4 @@ obtenerPropietarios()
   .catch(error => {
     console.error('Error:', error);
   });
-Este README es solo un ejemplo y puede ser adaptado para que se ajuste a tu proyecto específico. Asegúrate de reemplazar las URLs, detalles de componentes y otros elementos relevantes con la información correcta de tu proyecto.
+
