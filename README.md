@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+#Frontend React para API de Propiedades y Propietarios
+Este proyecto es un frontend construido con React que se comunica con las APIs de Propiedades y Propietarios en tu backend Django. El frontend utiliza la librería Axios para realizar las peticiones HTTP a los endpoints mencionados en el README del backend.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Primeros pasos
+Sigue estos pasos para configurar y ejecutar el frontend en tu máquina local:
 
-## Available Scripts
+Clona este repositorio en tu máquina:
 
-In the project directory, you can run:
+bash
+Copy code
+git clone https://github.com/tu-usuario/tu-proyecto-frontend.git
+cd tu-proyecto-frontend
+Instala las dependencias del proyecto:
 
-### `npm start`
+bash
+Copy code
+npm install
+Configura los archivos de comunicación:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+En la carpeta src/api, encontrarás dos archivos: apiPropiedad.js y apiPropietario.js. Cada archivo contiene funciones que utilizan Axios para realizar las peticiones a las APIs respectivas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ejecuta la aplicación:
 
-### `npm test`
+bash
+Copy code
+npm start
+Accede a la aplicación en tu navegador: http://localhost:3000
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Componentes
+El frontend consta de 8 componentes independientes que se reutilizan en todo el proyecto. Estos componentes se encuentran en la carpeta src/components.
 
-### `npm run build`
+Componente1.js: Descripción del primer componente.
+Componente2.js: Descripción del segundo componente.
+...
+Componente8.js: Descripción del octavo componente.
+Uso de los archivos de comunicación
+Los archivos apiPropiedad.js y apiPropietario.js en la carpeta src/api contienen funciones que interactúan con las APIs de Propiedades y Propietarios respectivamente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ejemplo de uso:
+javascript
+Copy code
+import { obtenerPropiedades } from './apiPropiedad';
+import { obtenerPropietarios } from './apiPropietario';
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+// Obtener todas las propiedades
+obtenerPropiedades()
+  .then(respuesta => {
+    console.log(respuesta.data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+// Obtener todos los propietarios
+obtenerPropietarios()
+  .then(respuesta => {
+    console.log(respuesta.data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+Este README es solo un ejemplo y puede ser adaptado para que se ajuste a tu proyecto específico. Asegúrate de reemplazar las URLs, detalles de componentes y otros elementos relevantes con la información correcta de tu proyecto.
